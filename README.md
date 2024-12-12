@@ -1,8 +1,6 @@
 # SignalHub
 
-<br>
 SignalHub is a project designed to send and visualize messages through shell scripts.
-</br>
 
 <p>
   <a href="https://github.com/honeok/SignalHub/actions/workflows/publish.yml/badge.svg" target="_blank">
@@ -26,4 +24,9 @@ SignalHub is a project designed to send and visualize messages through shell scr
   <a href="https://img.shields.io/github/issues/honeok/signalhub.svg" target="_blank">
     <img src="https://img.shields.io/github/issues/honeok/signalhub.svg" alt="Issues" />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://cdn.img2ipfs.com/ipfs/QmcWBPFdZztA4iZQppjYTbXj3xkxXEDY3W63HCidzPsP6A?filename=image.png"
+       alt="Image">
 </p>
