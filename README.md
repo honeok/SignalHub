@@ -1,6 +1,8 @@
 # SignalHub
 
+<br>
 SignalHub is a project designed to send and visualize messages through shell scripts.
+</br>
 
 <p>
   <a href="https://github.com/honeok/SignalHub/actions/workflows/publish.yml/badge.svg" target="_blank">
