@@ -44,8 +44,8 @@ Storage Options:
 - **Optional:** MySQL can be used for advanced setups and better scalability.  
 
 > Deployment  
-> > For a reliable and persistent deployment, it is highly recommended to use **Docker Compose**.  
-> > This ensures easy management of database and application configurations, making the setup reproducible and maintainable.
+> For a reliable and persistent deployment, it is highly recommended to use **Docker Compose**.  
+> This ensures easy management of database and application configurations, making the setup reproducible and maintainable.
 
 ## License
 
