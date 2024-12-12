@@ -44,6 +44,6 @@ This project is licensed under the GPL-3.0 License. See the [LICENSE](./LICENSE)
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=honeok/SignalHub&type=Date)](https://star-history.com/#honeok/SignalHub&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=honeok/SignalHubs&type=Date)](https://star-history.com/#honeok/SignalHub&Date)
 
 感谢你的支持！如果你喜欢这个项目，欢迎给我一个⭐Star！
