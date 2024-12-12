@@ -30,3 +30,20 @@ SignalHub is a project designed to send and visualize messages through shell scr
   <img src="https://cdn.img2ipfs.com/ipfs/QmPfNWxGPJ5cYL4fL6wdHcYdTWmiqb1y2tKM9X1NbzeF85?filename=image.png"
        alt="Image">
 </p>
+
+## 🔧 How to Install
+
+🐳 Docker
+```shell
+docker run -d --restart=unless-stopped -p 5000:5000 --name signalhub honeok/signalhub
+```
+
+## License
+
+This project is licensed under the GPL-3.0 License. See the [LICENSE](./LICENSE) file for more details.
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=honeok/SignalHub&type=Date)](https://star-history.com/#honeok/SignalHub&Date)
+
+感谢你的支持！如果你喜欢这个项目，欢迎给我一个⭐Star！
