@@ -27,6 +27,6 @@ SignalHub is a project designed to send and visualize messages through shell scr
 </p>
 
 <p align="center">
-  <img src="https://cdn.img2ipfs.com/ipfs/QmcWBPFdZztA4iZQppjYTbXj3xkxXEDY3W63HCidzPsP6A?filename=image.png"
+  <img src="https://cdn.img2ipfs.com/ipfs/QmPfNWxGPJ5cYL4fL6wdHcYdTWmiqb1y2tKM9X1NbzeF85?filename=image.png"
        alt="Image">
 </p>
