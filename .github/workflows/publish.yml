@@ -38,6 +38,6 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            honeok/signalhub:${{ env.DATE }}-${{ env.RANDOM_STRING }}
+            honeok/signalhub:${{ env.DATE }}-{{ env.RANDOM_STRING }}
             honeok/signalhub:latest
           platforms: linux/amd64,linux/arm64,linux/arm/v7
