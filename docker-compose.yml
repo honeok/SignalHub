@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  signalhub:
+    image: signalhub
+    container_name: signalhub
+    restart: unless-stopped
+    ports:
+      - 5000:5000
+    networks:
+      - signalhub
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=signalhub
+      - MYSQL_DATABASE=logs
+      - DB_TYPE=mysql
+      - WEB_PASSWORD=${WEB_PASSWORD:-}
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0.39
+    container_name: signalhub_db
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=signalhub
+      - MYSQL_DATABASE=logs
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - signalhub
+    command:
+      - --character-set-server=utf8mb4
+
+networks:
+  signalhub:
+    driver: bridge
+
+volumes:
+  mysql_data: 
