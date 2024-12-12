@@ -40,11 +40,11 @@ docker run -d --restart=unless-stopped -p 5000:5000 --name signalhub honeok/sign
 SignalHub is now running on <http://0.0.0.0:5000>.
 
 > Storage Options
-- **Default:** SQLite is used for lightweight and easy setup.  
-- **Optional:** MySQL can be used for advanced setups and better scalability.  
+> - **Default:** SQLite is used for lightweight and easy setup.  
+> - **Optional:** MySQL can be used for advanced setups and better scalability.  
 
 > Deployment
-For a reliable and persistent deployment, it is highly recommended to use **Docker Compose**. This ensures easy management of database and application configurations, making the setup reproducible and maintainable.
+> For a reliable and persistent deployment, it is highly recommended to use **Docker Compose**. This ensures easy management of database and application configurations, making the setup reproducible and maintainable.
 ...
 
 ## License
