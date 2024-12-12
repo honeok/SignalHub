@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>回调日志</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        thead tr {
+            background-color: #f2f2f2;
+        }
+        .clear-btn {
+            background-color: #ff4444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .clear-btn:hover {
+            background-color: #cc0000;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #666;
+            font-size: 14px;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>回调日志</h1>
+        <button class="clear-btn" onclick="clearLogs()">清除所有日志</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>动作</th>
+                <th>时间戳</th>
+                <th>国家</th>
+                <th>操作系统</th>
+                <th>CPU架构</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                <td>{{ log.id }}</td>
+                <td>{{ log.action }}</td>
+                <td>{{ log.timestamp }}</td>
+                <td>{{ log.country }}</td>
+                <td>{{ log.os_info }}</td>
+                <td>{{ log.cpu_arch }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="footer">
+        Powered by honeok
+    </div>
+
+    <script>
+    function clearLogs() {
+        if (confirm('确定要清除所有日志吗？此操作不可恢复！')) {
+            fetch('/clear-logs', {
+                method: 'POST',
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert('日志已清除');
+                    window.location.reload();
+                } else {
+                    alert('清除失败：' + data.error);
+                }
+            })
+            .catch(error => {
+                alert('发生错误：' + error);
+            });
+        }
+    }
+    </script>
+</body>
+</html> 
