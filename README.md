@@ -21,4 +21,7 @@ SignalHub is a project designed to send and visualize messages through shell scr
   <a href="https://github.com/honeok/SignalHub" target="_blank">
     <img src="https://img.shields.io/github/stars/honeok/SignalHub?style=flat" alt="GitHub Stars" />
   </a>
+  <a href="https://img.shields.io/github/issues/honeok/signalhub.svg" target="_blank">
+    <img src="https://img.shields.io/github/issues/honeok/signalhub.svg" alt="Issues" />
+  </a>
 </p>
